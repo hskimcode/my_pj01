@@ -1,0 +1,10 @@
+name = "my_fortran_pj"
+version = "0.1.0"
+
+[library]
+source-dir = "src"
+
+[[executable]]
+name = "my_test_app"
+source-dir = "app"
+main = "main.f90"
