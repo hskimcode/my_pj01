@@ -1,1 +1,4 @@
-.venv/ docs/build/ modules/*.so .fpm/ build/
+.venv/ 
+docs/build/ 
+modules/*.so 
+fortran/tmp/
