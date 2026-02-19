@@ -1,10 +1,10 @@
-name = "oop_study"
+name = "my_fortran_pj"
 version = "0.1.0"
 
 [library]
 source-dir = "src"
 
 [[executable]]
-name = "geo_app"
+name = "my_test_app"
 source-dir = "app"
 main = "main.f90"

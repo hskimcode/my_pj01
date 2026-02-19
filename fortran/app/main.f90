@@ -1,9 +1,19 @@
-! fortran/app/main.f90
 program main
-    use test_module      ! 위에서 만든 모듈을 사용함
+    use m_station
     implicit none
 
-    print *, "== 메인 프로그램을 시작합니다 =="
-    call greet_user("지구물리 연구원")  ! 모듈 안의 서브루틴 호출
-    print *, "== 프로그램을 종료합니다 =="
+    type(Station) :: my_obs ! 객체 변수 선언
+
+    ! 객체 데이터 초기화
+    my_obs%name = "SEOUL_OBS"
+    my_obs%lat  = 37.5665_dp
+    my_obs%lon  = 126.9780_dp
+
+    print *, "== 객체지향 포트란 프로그램 시작 =="
+    
+    ! 메서드 호출 (객체%프로시저 명칭)
+    call my_obs%print_info()
+
+    print *, "== 프로그램 종료 =="
 end program main
+    

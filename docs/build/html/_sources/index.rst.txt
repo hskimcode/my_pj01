@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-geo_pj01 Today's documentation
+geo_pj01 Today's CHK 02/19
 ===============================
 
 Add your content using ``reStructuredText`` syntax. See the
